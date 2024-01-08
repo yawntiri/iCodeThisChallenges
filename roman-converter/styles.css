@@ -1,0 +1,51 @@
+body{
+    background-color: #1B1B32;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 100vh;
+    overflow: hidden;
+}
+img{
+    width:300px
+}
+.container>input[type="number"], button{
+    padding:10px;
+    margin:0;
+    width: 20rem;
+    flex-grow: 2;
+}
+.container{
+    background-color: #3B3B4F;
+    border: 2px solid gray;
+    width:auto;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+}
+button{
+    background-color: #FFC143;
+   width:100%;
+   border: none;
+   font-size: larger;
+   font-weight: 500;
+}
+input[type="number"]{
+    background-color: #0A0A23;
+    color: white;
+    font-size: large;
+    font-weight: 400;
+}
+#output{
+    width:100%;
+    border:2px solid gray;
+    text-align: center;
+    font-size: larger;
+    font-weight: 400;
+}
