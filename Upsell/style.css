@@ -1,0 +1,141 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: .8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke
+    }
+    img{
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        filter: blur(5px);
+    }
+    .container{
+        background-color: rgb(8, 27, 51);
+        display: grid;
+    
+        padding: .5rem;
+        grid-template-columns: .7fr .7fr 1fr;
+        grid-template-rows: .3fr 1fr;
+        grid-template-areas: 
+        "head head head"
+        "seven five carts";
+    }
+    header{
+        grid-area: head;
+    text-align: center;
+    border-bottom: .1rem solid black;
+    }
+    .seven, .five{
+    grid-area: seven;
+    /* background-color: orange; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-right: .1rem solid black;
+    }
+    .seven ul{
+        text-align: justify;
+        font-size: .6rem;
+    }
+    .five{
+    grid-area: five;
+    /* background-color: royalblue; */
+    }
+    #detail{
+        font-size: .6rem;
+    }
+    .carts{
+    grid-area: carts;
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    
+    }
+    #mini{
+        opacity: .3;
+        font-size: .5rem;
+    }
+    .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: .1rem solid black;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px;
+    gap:2px;
+    flex: 1;
+    
+    }
+    .cards p:first-child{
+        font-size: .8em;
+    }
+    #fig{
+        display:flex;
+        align-items: center;
+        gap: .3rem;
+        justify-content: space-around;
+        padding-left: 40px;
+    }
+    #fig p{
+        padding-right: 20px;
+    }
+    button{
+      border: 1px solid rgb(148, 102, 17);
+      color: white;
+        border-radius: 10px;
+        font-size: .5rem;
+        height: 1.2rem;
+        background-color: transparent;
+        position: relative;
+        text-align: end;
+        padding-left: .5rem;
+    }
+    .sash{
+        border: none;
+    }
+    #banner{
+        font-size: .5rem;
+        background: linear-gradient(90deg, red, rgb(186, 123, 123));
+        width: 50px;
+        text-align: center;
+        position: absolute;
+        transform: rotate(-40deg);    
+    }
+    
+    /* media queries */
+    
+    @media screen and (max-width: 737px) {
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .container {
+                padding: .5rem;
+                grid-template-rows: .3fr .7fr .7fr 1fr;
+                grid-template-columns:  1fr !important;
+                grid-template-areas:
+                    "head"
+                     "seven"
+                      "five"
+                      "carts";
+            }
+    
+            
+                    .seven,
+                    .five {
+                        border-bottom: .1rem solid black;
+                        border-right: none;
+                        flex:1;
+                        gap: 2px;
+                        padding-bottom: 20px;
+                    }
+    }
