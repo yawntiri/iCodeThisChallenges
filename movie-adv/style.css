@@ -1,0 +1,83 @@
+/* Add CSS here */
+body{
+    background-color: #2C2446;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 18em;
+    height: 30em;
+    padding:.5em;
+   align-items: center;
+}
+header, .name, .images, .info{
+    display: flex;
+        width: 100%;
+}
+header{
+
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+.name{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.images{
+    /* background-color: #2C2446; */
+    height: 12em;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+img{
+    width: 200px;
+    /* object-fit: contain; */
+}
+.pic-3{
+    height: 13em;
+        width: 13em;
+        object-fit: cover;
+    z-index: 1;
+    box-shadow: 2px 2px 20px 2px rgba(115, 115, 199, 0.562);
+}
+.pic-1, .pic-2{
+    height: 10em;
+    width:10em;
+    position: absolute;
+}
+.pic-1{
+    left: 46%;;
+}
+.pic-2{
+    right: 46%;;
+}
+.info{
+    flex-direction: column;
+    font-size: .6em;
+    text-align: justify;
+    width: 24em;
+    padding-bottom: 20px;
+}
+
+input{
+    width: 14em;
+    font-size:1em;
+    color: white;
+    height: 3em;
+    background-color:#008AD3;
+    border: none;
+}
