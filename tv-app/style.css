@@ -1,0 +1,132 @@
+/* Add CSS here */
+:root{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(22, 76, 83);
+    color:rgb(147, 176, 179)
+}
+.container{
+    display: grid;
+    height: 80vh;
+  grid-template-columns: .1fr 1fr;
+  grid-template-rows: .1fr 1fr 1fr;
+  grid-template-areas: 
+  "categories nav"
+  "categories cards"
+  "features features";
+  gap:1rem;;
+}
+nav{
+    grid-area: nav;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap:2em;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.now{
+    background-color: rgb(10, 181, 187);
+    border-radius: 1em;
+    width: 4em;
+    color: white !important;
+    text-align: center;
+}
+.categories{
+    grid-area: categories;
+    padding-right: 1em
+   
+}
+.categories ul{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 0;
+    font-size: 1.5em;
+}
+.categories ul span{
+    font-size: .7em;
+}
+.series{
+    background-color: rgb(10, 181, 187);
+    padding: .5rem;
+border-top-right-radius:3rem ;
+border-bottom-right-radius:3rem;
+color:white
+}
+.categories span{
+    
+    font-size: .9em;
+}
+.cards{
+    grid-area: cards;
+    height: 30rem;
+    overflow-y: scroll;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: start;
+}
+.items{
+   width: 25rem;
+   height: 14rem;
+    /* border:.1rem solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.items img{
+    width: 25rem;
+    height: 11rem;
+    object-fit:cover;
+}
+.title{
+    color: white;
+}
+ .status{
+    display: flex;
+    justify-content: space-between;
+}
+.timeStamp{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: .6rem;
+
+}
+.color-1{background-color: aqua; height: .5rem;}
+.color-2{background-color: gray; height: .1rem;}
+.tid-1{width: 100%;} 
+.id-1{ width: 40%}
+.id-2{ width: 250%}
+.id-3{ width: 300%}
+.id-4{ width: 140%}
+.id-5{ width: 20%}
+.id-6{ width: 240%}
+
+
+
+
+.features{
+    grid-area: features;
+    padding-left: 3em;
+    
+}
+.ft{
+    width: 18rem;
+    height: 12rem;
+}
+.ft img{
+    width: 18rem;
+    height: 12rem;
+}
