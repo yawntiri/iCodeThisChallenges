@@ -28,15 +28,6 @@ img{
     z-index: 1;
 }
 
-.circle{
-    width: 1px;
-    height: 5px;
-    border-radius: 10px;
-    background-color: white;
-    position: absolute;
-    top: 0;
-    z-index: 0;
-}
 
 .input{
     padding: 5px;
@@ -48,7 +39,7 @@ img{
     width: 95%;
     justify-content: center;
 }
-#phone{
+#user-input{
 height: 20px;
 border-radius: 7px;
 padding: 5px;
@@ -75,4 +66,8 @@ margin: 10px 5px 10px 5px;
     display: flex;
     justify-content: space-around;
     padding-top: 10px;
+}
+
+#result-div{
+    text-align: center;
 }
