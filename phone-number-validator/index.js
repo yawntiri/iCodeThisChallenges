@@ -1,4 +1,4 @@
-const result = document.querySelector('#result-div')
+const result = document.querySelector('#results-div')
 const input = document.querySelector('#user-input')
 const check = document.querySelector('#check-btn')
 const clear = document.querySelector('#clear-btn')
@@ -13,7 +13,7 @@ const clear = document.querySelector('#clear-btn')
         let validValue = result.innerHTML = `Valid US number: <br> ${input.value}`;
         let invalidValue = result.innerHTML = `Invalid US number: <br> ${input.value}`;
         if (input.value == ''){
-                prompt('Please enter a number');
+                alert('Please provide a phone number');
             }else{
             switch (input.value){
                 case '1 555-555-5555': validValue; break;
