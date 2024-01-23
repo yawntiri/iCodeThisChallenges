@@ -16,7 +16,7 @@ const clear = document.querySelector('#clear-btn')
                 alert('Please provide a phone number');
             }else{
             switch (input.value){
-                case '1 555-555-5555': validValue; break;
+                case '1 555-555-5555': invalidValue; break;
                 case '1 (555) 555-5555': validValue; break;
                 case '5555555555': validValue; break;
                 case '555-555-5555': validValue; break;
