@@ -21,7 +21,7 @@ img{
     border-width: 40px 10px 10px 10px;
     border-radius: 5px;
     height: 50vh;
-    width: 16vw;
+    width: auto;
     display: flex;
     flex-direction: column;
     position: relative;
