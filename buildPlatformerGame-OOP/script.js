@@ -11,6 +11,16 @@ let isCheckpointCollisionDetectionActive = true;
 
 
 class Player {
-
+    constructor() {
+        this.position = {
+          x: 10,
+          y: 400,
+        };
+        this.velocity = {
+          x: 0,
+          y: 0,
+        };
+        this.width = 40;
+        this.height = 40;
 }
 
