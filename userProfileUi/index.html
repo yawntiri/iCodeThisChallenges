@@ -11,45 +11,56 @@
 
 <!-- Change code below this line -->
 <body class="bg-[#446392] flex justify-center items-center min-h-screen">
-   <div id="container" class=" flex flex-col ">
-    <div id="main" class="flex z-10 bg-red-500 w-auto h-auto">
-        <div id="left" class="flex flex-col gap-2">
-                <div id="top" class="flex flex-col items-center gap-4 p-4 rounded-md bg-white">
-                    <div class="flex gap-2">
-                        <img src="https://cdn.hugeicons.com/icons/dashboard-square-add-stroke-rounded.svg" alt="dashboard-square-add"  class="p-2 w-10 h-10 border-4 rounded-full border-opacity-20 border-blue-400" />
-                        <span class="flex flex-col items-start">
-                            <p class="text-[0.6rem]">App running . last 7 days</p>
-                            <p class="text-lg font-bold">78</p>
-                        </span>
+    <div id="container" class=" flex flex-col relative items-center content-center">
+        <div id="main" class="flex z-10 w-[25rem] content-end h-auto contents-end gap-4 absolute">
+            <div id="left" class="flex flex-col items-end gap-2">
+                    <div id="top" class="flex w-[12rem] flex-col items-center gap-4 p-4 rounded-md bg-white shadow-md">
+                        <div class="flex gap-2">
+                            <img src="https://cdn.hugeicons.com/icons/dashboard-square-add-stroke-rounded.svg" alt="dashboard-square-add"  class="p-2 w-10 h-10 border-4 rounded-full border-opacity-20 border-blue-400" />
+                            <span class="flex flex-col items-start">
+                                <p class="text-[0.6rem]">App running . last 7 days</p>
+                                <p class="text-lg font-bold">78</p>
+                            </span>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="https://cdn.hugeicons.com/icons/dashboard-square-add-stroke-rounded.svg" alt="dashboard-square-add"  class="p-2 w-10 h-10 border-4 rounded-full border-opacity-20 border-blue-400" />
+                            <span class="flex flex-col items-start">
+                                <p class="text-[0.6rem]">App running . last 7 days</p>
+                                <p class="text-lg font-bold">78</p>
+                            </span>
+                        </div>
+                        <button class="px-10 py-2 text-[0.6rem] bg-[#294266] text-white rounded-md ">Customize</button>
                     </div>
-                    <div class="flex gap-2">
-                        <img src="https://cdn.hugeicons.com/icons/dashboard-square-add-stroke-rounded.svg" alt="dashboard-square-add"  class="p-2 w-10 h-10 border-4 rounded-full border-opacity-20 border-blue-400" />
-                        <span class="flex flex-col items-start">
-                            <p class="text-[0.6rem]">App running . last 7 days</p>
-                            <p class="text-lg font-bold">78</p>
-                        </span>
-                    </div>
-                    <button class="px-10 py-2 text-[0.6rem] bg-[#294266] text-white rounded-md ">Customize</button>
-                </div>
-                <div id="down" class="flex p-4 rounded-md bg-white justify-between">
+                <div id="down" class="flex w-[15rem] p-4 rounded-md bg-white justify-between shadow-md">
                     <span class="flex gap-1 ">
-                        <img src="https://cdn.hugeicons.com/icons/view-stroke-rounded.svg" alt="view" class="w-4 h-4 " />
+                        <img src="https://cdn.hugeicons.com/icons/view-stroke-rounded.svg" alt="view" class="w-4 h-4 object-cover" />
                         <p class="text-xs font-bold ">509 K</p>
                     </span>
-                    <span>
-                     <ul class="flex">
-                        <li><img src="https://ik.imagekit.io/kodaq/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg?updatedAt=1694787220288" alt="" class="z-20 rounded-full w-5 h-5 border-2 border-white"></li>
-                        <li><img src="https://ik.imagekit.io/kodaq/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg?updatedAt=1694787220288" alt="" class="z-10 rounded-full w-5 h-5 border-2 border-white"></li>
-                        <li><img src="https://ik.imagekit.io/kodaq/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg?updatedAt=1694787220288" alt="" class="z-0 rounded-full w-5 h-5 border-2 border-white"></li>
-                    </ul>   
+                    <span class="flex">
+                        <img src="https://ik.imagekit.io/kodaq/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg?updatedAt=1694787220288" alt="" class="z-20 rounded-full w-5 h-5 border-2 border-white mr-[-6px]">
+                        <img src="https://ik.imagekit.io/kodaq/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg?updatedAt=1694787220288" alt="" class="z-10 rounded-full w-5 h-5 border-2 border-white mr-[-6px]">
+                        <img src="https://ik.imagekit.io/kodaq/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg?updatedAt=1694787220288" alt="" class="z-0 rounded-full w-5 h-5 border-2  border-white mr-[-6px]">
                     </span>
             </div>
-                </div>
-        </div>
-        <div id="right"></div>
     </div>
-    <div id="bg" class="flex z-0 w-[20rem] h-[20rem] rounded-full bg-[#4E72AA]"></div>
-   </div>
+    <div id="right" class="flex flex-col bg-white rounded-md gap-2 items-center shadow-md p-5 h-fit w-40">
+        <div id="name-imag" class="flex flex-col gap-2">
+        <div class="flex flex-col items-center p-0 relative">
+        <img src="https://ik.imagekit.io/kodaq/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg?updatedAt=1694787220288 " alt="" class="border-4 border-blue-300 border-opacity-20 rounded-full w-14 h-14 z-0">
+        <p class="bg-[#294266] text-[0.4rem] rounded-md w-5 p-0.5 text-center text-white z-10 mt-[-8px]">PRO</p>
+        </div>
+
+        <div id="name" class="flex flex-col items-center gap-1">
+            <p class="text-xs font-bold">Kelvin Costa</p>
+            <p class="text-[0.4rem]">gesscio</p>
+        </div>
+        </div>
+
+        <p class="text-[0.4rem]">120 followers. 207 following</p>
+    </div>
+</div>
+<div id="bg" class="flex z-0 w-[20rem] h-[20rem] rounded-full bg-[#4E72AA]"></div>
+</div>
 </body>
 <!-- Change code above this line -->
 
