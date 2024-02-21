@@ -66,6 +66,9 @@ class Platform{
   update() {
     this.draw();
   }
+  down(){
+    this.position.y += 10;
+  }
 }
 
 const player = new Player();
