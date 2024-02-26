@@ -50,13 +50,34 @@ class Player {
   }
 }
 
-class Platform{
-  constructor(dont, know){
-    this.dont = dont,
-    this.know = know
-  }
+ class Platform {
+            constructor(x, y, width, height, color = 'white') {
+                this.x = x;
+                this.y = y;
+                this.width = width;
+                this.height = height;
+                this.color = color;
+            }
 
-}
+            move(dx, dy) {
+                this.x += dx;
+                this.y += dy;
+            }
+
+            checkCollision(otherObject) {
+                return (
+                    this.x < otherObject.x + otherObject.width &&
+                    this.x + this.width > otherObject.x &&
+                    this.y < otherObject.y + otherObject.height &&
+                    this.y + this.height > otherObject.y
+                );
+            }
+
+            draw(context) {
+                context.fillStyle = this.color;
+                context.fillRect(this.x, this.y, this.width, this.height);
+            }
+        }
 
 const player = new Player();
 
